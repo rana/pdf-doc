@@ -1,6 +1,6 @@
 # pdf-doc
 
-Create PDF documents.
+Create a writing document and save to PDF with Rust.
 
 A minimal library.
 
@@ -9,6 +9,8 @@ Model a writing document with formatting options.
 Slightly modeled after _Google Docs_ or _Microsoft Word_.
 
 Save to `PDF` or `JSON`.
+
+Reads `JSON` documents only. 
 
 ## Prerequisites
 

@@ -2,6 +2,14 @@
 name = "pdf-doc"
 version = "0.1.0"
 edition = "2021"
+authors = ["Rana Ian"]
+description = "Create a writing document and save to PDF with Rust."
+documentation = "https://docs.rs/pdf-doc"
+readme = "README.md"
+keywords = ["pdf", "document", "pdf-document", "text", "json"]
+categories = ["text-editors", "text-processing"]
+license = "MIT"
+repository = "https://github.com/rana/pdf-doc"
 
 [dependencies]
 google-fonts = { version = "0.1.5" }
