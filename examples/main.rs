@@ -38,10 +38,8 @@ fn main() {
         cur_doc.replace_par_at(0, "{{name}}", name);
         // Copy paragraphs to destination letter.
         ltr.copy_pars(cur_doc.clone());
-        // Add a page break as needed.
-        if idx != names.len() - 1 {
-            ltr.add_pag_brk();
-        }
+        // Add a page break.
+        ltr.add_pag_brk();
     }
 
     // Save letter in JSON format.
