@@ -76,6 +76,8 @@ impl Default for Doc {
 
 impl Doc {
     /// Save the document as a _JSON_ file.
+    /// 
+    /// `.json` file suffix is automatically appended.
     pub fn save_json<P>(&self, pth: P) -> Result<(), DocError>
     where
         P: AsRef<Path>,
@@ -97,6 +99,8 @@ impl Doc {
     }
 
     /// Read a JSON file from disk.
+    /// 
+    /// `.json` file suffix is automatically appended.
     pub fn read_json<P>(&self, pth: P) -> Result<Doc, DocError>
     where
         P: AsRef<Path>,
@@ -115,6 +119,8 @@ impl Doc {
     }
 
     /// Save the document as a _PDF_ file.
+    /// 
+    /// `.pdf` file suffix is automatically appended.
     pub fn save_pdf<P>(&self, pth: P) -> Result<(), DocError>
     where
         P: AsRef<Path>,
