@@ -31,7 +31,7 @@ fn main() {
 
     // Iterate through each name.
     let names = ["Albert Einstein", "Richard Feynman", "Paul Dirac"];
-    for (idx, name) in names.iter().enumerate() {
+    for name in names {
         // Clone template.
         let mut cur_doc = tmpl.clone();
         // Replace placeholder text with actual name.
