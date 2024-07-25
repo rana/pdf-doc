@@ -24,10 +24,7 @@ fn main() {
     );
 
     // Create a letter document from the template.
-    let mut ltr = tmpl.clone();
-
-    // Clear letter paragraphs and save formatting.
-    ltr.elms.clear();
+    let mut ltr = tmpl.clone_clear();
 
     // Iterate through each name.
     let names = ["Albert Einstein", "Richard Feynman", "Paul Dirac"];

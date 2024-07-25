@@ -276,6 +276,13 @@ impl Doc {
         }
     }
 
+    /// Clone the document and clear all elements.
+    pub fn clone_clear(&self) -> Self {
+        let mut ret = self.clone();
+        ret.elms.clear();
+        ret
+    }
+
     /// Sets the _size_ of the document.
     ///
     /// ### Arguments
