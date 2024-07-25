@@ -1,7 +1,7 @@
 use pdf_doc::*;
 
 fn main() {
-    // Create ad document template.
+    // Create a document template.
     let spc: f32 = 0.6;
     let spc_aft: f32 = 2.0 * spc;
     let mut tmpl = new_ansi_letter()
