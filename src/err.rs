@@ -1,6 +1,5 @@
 use serde::{Deserialize, Serialize};
 use serde_json;
-// use std::error::Error;
 use std::fmt::Display;
 use std::fmt::{self, Formatter};
 use std::io;
@@ -12,6 +11,8 @@ pub enum DocError {
     FontLoadError(google_fonts::FontError),
     FontParseError(StringError),
 }
+
+impl std::error::Error for DocError {}
 
 impl Display for DocError {
     fn fmt(&self, f: &mut Formatter<'_>) -> fmt::Result {
